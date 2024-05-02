@@ -27,7 +27,7 @@ for item in items["values"]:
         'q': item + ' item',
     }
     # Search and get the first image
-    gis.search(search_params=_search_params, path_to_dir=f'C:/Users/hayde/Downloads/Random shit/imgs/', custom_image_name=_search_params['q'][10:])
+    gis.search(search_params=_search_params, path_to_dir=f'./imgs/', custom_image_name=_search_params['q'][10:])
 
     # Get the URL of the first image
     if len(gis.results()) == 0:
